@@ -1,0 +1,232 @@
+/* Removes default padding, margin, and ensures consistent sizing for all elements */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* === Header Section === */
+/* Styles the header inside the #mypage-header container */
+#mypage-header>header {
+    top: 0;
+    width: 100%;
+    border: 2px solid black;
+    border-bottom: lightseagreen;
+    border-style: dashed;
+    height: 100px;
+    border-left-width: 6px;
+    border-right-width: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: turquoise;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: large;
+    border-style: groove;
+    background-color: rgb(53, 39, 39);
+}
+/* === Left Navigation Bar === */
+#mypage-leftnav {
+    border: 2px solid black;
+    flex: 1;
+    border-style: none;
+    border-top-style: none;
+    border-bottom-style: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    background-color: thistle;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+/* Heading inside left navigation */
+#mypage-leftnav h1 {
+    margin-bottom: 20px;
+    color: rgb(192, 102, 41);
+}
+/* Unordered list inside navigation */
+#mypage-leftnav ul {
+    margin-left: 30px;
+}
+/* Each list item in navigation */
+#mypage-leftnav li {
+    padding-bottom: 20px;
+}
+/* === Main Layout Wrapper === */
+/* Makes content and sidebar appear side-by-side */
+#wrap-div {
+    display: flex;
+    flex-direction: row-reverse;
+}
+/* === Center Content Area === */
+#mypage-centercontent {
+    flex: 3;
+    padding-left: 10px;
+    background-color: thistle;
+    border-left-style: none;
+    border-top-style: none;
+    border-bottom-style: none;
+    border-right-width: 6px;
+    margin: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+/* Paragraph styling in center content */
+#mypage-centercontent p {
+    text-indent: 50px;
+}
+/* Lists inside center content */
+#mypage-centercontent ul {
+    list-style-position: inside;
+    margin-left: 10px;
+}
+/* Ordered lists inside center content */
+#mypage-centercontent ol {
+    list-style-position: inside;
+    margin-left: 10px;
+}
+/* === Footer Section === */
+#mypage-footer {
+    border: 0px solid black;
+    height: 100px;
+    display: flex;
+    align-items: flex-end;
+    font-size: 30px;
+    background-color: rgb(39, 48, 53);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Styles inside <footer> tag */
+#mypage-footer footer {
+    display: flex;
+    gap: 30px;
+}
+/* === Section Styling (Individual Blocks) === */
+/* Objectives section */
+#div-obj {
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+/* Technical skills section */
+#div-tech {
+    margin-bottom: 20px;
+    line-height: 25px;
+    font-size: 20px;
+}
+/* Education section */
+#div-edu {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 25px;
+}
+/* Projects section */
+#div-proj {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 25px;
+}
+/* Certification section */
+#div-certificate {
+    font-size: 20px;
+    line-height: 25px;
+}
+/* === Text Styling === */
+/* Makes <span> text white (used in footer) */
+.footer-span {
+    color: white;
+}
+/* Heading (h2) styling */
+.heading-2 {
+    line-height: 35px;
+    color: rgb(192, 102, 41);
+}
+/* Footer <strong> styling */
+.footer>.footer-strong {
+    font-weight: bold;
+    color: rgb(80, 207, 165);
+}
+/* JS section background */
+#js-wrap {
+    background-color: #e23157;
+    display: flex;
+    justify-content: space-around;
+}
+/* Max of two numbers section */
+#js1-max {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+/* Result text color for max section */
+#js1-max>#max1 {
+    line-height: 70px;
+    color: rgb(214, 201, 82);
+}
+/* Reverse string section */
+#js2-rev {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+/* Reverse result text styling */
+.rev-div>#rev1 {
+    line-height: 70px;
+    color: rgb(214, 201, 82);
+}
+/* Largest word section */
+#js3-largestWord {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+/* Button styling */
+.btn-style {
+    padding: 5px;
+    margin: 5px;
+    background-color: cadetblue;
+}
+/* Button hover effect */
+.btn-style:hover {
+    background-color: green;
+}
+/* Input field styling */
+.input-style {
+    padding: 10px;
+    background-color: antiquewhite;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+/* Largest word result text */
+#js3-largestWord>#heading3-largestWord {
+    line-height: 70px;
+    color:rgb(214, 201, 82);;
+}
+/* Cookies section */
+#js4-cookie {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+/*date*/
+#date{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 30px;
+}
+/* Largest String*/
+#largest-str{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 30px;
+}
