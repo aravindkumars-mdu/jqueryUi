@@ -1,0 +1,240 @@
+/* Removes default padding, margin, and ensures consistent sizing for all elements */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* === Header Section === */
+#mypage-header{
+    background-color: rgba(175, 230, 173, 0.562);
+}
+/* Styles the header inside the #mypage-header container */
+#mypage-header > header {
+    width: 100%;
+    top: 0;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(15, 15, 15);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: large;
+}
+/* === Left Navigation Bar === */
+#mypage-leftnav {
+    border: 2px solid black;
+    flex: 1;
+    border-style: none;
+    border-top-style: none;
+    border-bottom-style: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+/*tabs content*/
+#tabs>div{
+    height: auto;
+}
+#mypage-leftnav{
+    background-color: rgba(107, 182, 185, 0.61); 
+}
+/*heading in left navigation*/
+#mypage-leftnav h1 {
+    margin-bottom: 20px;
+    color: rgba(192, 101, 41, 0.719);
+}
+/* Unordered list inside navigation */
+#mypage-leftnav ul {
+    margin-left: 30px;
+}
+/* Each list item in navigation */
+#mypage-leftnav li {
+    padding-bottom: 20px;
+}
+/* === Main Layout Wrapper === */
+/* Makes content and sidebar appear side-by-side */
+#wrap_content {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+/* === Center Content Area === */
+#mypage-centercontent {
+    flex: 3;
+    border-right-width: 6px;
+    align-self: flex-start;
+    margin: 0px;
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+/* Paragraph styling in center content */
+#mypage-centercontent p {
+    text-indent: 50px;
+}
+/* Lists inside center content */
+#mypage-centercontent ul {
+    list-style-position: inside;
+    margin-left: 0px;
+}
+/* Ordered lists inside center content */
+#mypage-centercontent ol {
+    list-style-position: inside;
+    margin-left: 10px;
+}
+/* === Footer Section === */
+#mypage-footer {
+    border: 0px solid black;
+    height: 100px;
+    display: flex;
+    align-items: flex-end;
+    font-size: 30px;
+    background-color: rgba(39, 48, 53, 0.692);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Styles inside <footer> tag */
+#mypage-footer footer {
+    display: flex;
+    gap: 30px;
+}
+/* === Section Styling (Individual Blocks) === */
+/* Objectives section */
+#objectives {
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+/* Technical skills section */
+#technical_skills {
+    margin-bottom: 20px;
+    line-height: 25px;
+    font-size: 20px;
+}
+/* Education section */
+#education {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 25px;
+}
+/* Projects section */
+#project {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 25px;
+}
+/* Certification section */
+#certificate {
+    font-size: 20px;
+    line-height: 25px;
+}
+/* === Text Styling === */
+/* Makes <span> text white (used in footer) */
+.footer_span {
+    color: white;
+}
+/* Heading (h2) styling */
+.sub_heading {
+    line-height: 35px;
+    color: rgba(192, 101, 41, 0.76);
+}
+/* Footer <strong> styling */
+.footer>.footer_strong {
+    font-weight: bold;
+    color: rgb(80, 207, 165);
+}
+/* JS section background */
+#wrap_javascript_func {
+    background-color:rgba(41, 23, 49, 0.329);
+    display: flex;
+    justify-content: space-around;
+}
+/* Max of two numbers section */
+#maximum_number {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+/* Result text color for max section */
+#maximum_number>#maximum_output {
+    line-height: 70px;
+    color: rgb(214, 201, 82);
+}
+/* Reverse string section */
+#reverse_string {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+/* Reverse result text styling */
+.reverse_content>#reverse_output {
+    line-height: 70px;
+    color: rgb(214, 201, 82);
+}
+/* Largest word section */
+#largest_word {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+/* Button styling */
+.button_style {
+    padding: 5px;
+    margin: 5px;
+    background-color: cadetblue;
+    margin-top: 10px;
+}
+/* Button hover effect */
+.button_style:hover {
+    background-color: green;
+}
+/* Input field styling */
+.input_class {
+    padding: 10px;
+    background-color: antiquewhite;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+/* Largest word result text */
+#largest_word>#largest_word_output {
+    line-height: 70px;
+    color:rgb(214, 201, 82);;
+}
+/* Cookies section */
+#cookie {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+/*date*/
+#date{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    line-height: 30px;
+}
+/* Largest String*/
+#autocomplete{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 10px;
+    line-height: 30px;
+}
+/* Icon size increase*/
+.ui-icon-search {
+    width: 24px;
+    height: 24px;
+    font-size: 30px;
+    transform: scale(1.3);
+}
